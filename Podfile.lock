@@ -1,0 +1,13 @@
+PODS:
+  - Alamofire (1.1.4)
+  - CrashlyticsFramework (2.2.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 1.1)
+  - CrashlyticsFramework (~> 2.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 6a2cbaebe78a6d469bc55ee37f0a24ba22af76ac
+  CrashlyticsFramework: 5a6a8d7a0731bc75c63c3bd3d704962d5d8717cc
+
+COCOAPODS: 0.36.1
