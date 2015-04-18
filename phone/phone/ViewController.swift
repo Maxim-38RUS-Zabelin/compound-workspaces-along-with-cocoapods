@@ -24,7 +24,34 @@
 //
 
 import core
+import AFNetworking
 import UIKit
+import ViewUtils
 
 class ViewController: core.ViewController {
+
+    private weak var imageView: UIImageView? = nil
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let imageView = UIImageView()
+        imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        self.view.addSubview(imageView)
+        self.imageView = imageView
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        self.imageView?.frame = self.view.bounds
+        println(self.imageView?.width)
+        println(self.imageView?.top)
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.imageView?.setImageWithURL(NSURL(string: "http://placekitten.com/g/400/600"))
+    }
 }

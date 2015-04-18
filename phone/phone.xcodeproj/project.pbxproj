@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1382FD1AE28F2800813BAF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1382FC1AE28F2800813BAF /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CE7F368C1ACEBDFA00F68C78 /* phone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7F368B1ACEBDFA00F68C78 /* phone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE7F36921ACEBDFA00F68C78 /* phone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F36861ACEBDFA00F68C78 /* phone.framework */; };
 		CE7F36991ACEBDFA00F68C78 /* phoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F36981ACEBDFA00F68C78 /* phoneTests.swift */; };
 		CE7F36A41ACEBE4D00F68C78 /* AppDelegate_phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F36A21ACEBE4D00F68C78 /* AppDelegate_phone.swift */; };
 		CE7F36A51ACEBE4D00F68C78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F36A31ACEBE4D00F68C78 /* ViewController.swift */; };
 		CE7F36B51ACEC0DA00F68C78 /* core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F36B41ACEC0DA00F68C78 /* core.framework */; };
-		D507A96CB076D0597ED7BE44 /* Pods_phone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C33E1128F859CFD9892672 /* Pods_phone.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		179F78271487F6E128CC0A15 /* Pods-phone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phone.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-phone/Pods-phone.debug.xcconfig"; sourceTree = "<group>"; };
-		22C33E1128F859CFD9892672 /* Pods_phone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BA3BDBDD27155B08B8D7A8A /* Pods-phone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phone.release.xcconfig"; path = "../Pods/Target Support Files/Pods-phone/Pods-phone.release.xcconfig"; sourceTree = "<group>"; };
+		CE1382F21AE28E8600813BAF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CE1382F31AE28E8600813BAF /* Pods.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE1382FC1AE28F2800813BAF /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "/Users/user/Documents/Projects/Github/demo/Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<absolute>"; };
 		CE7F36861ACEBDFA00F68C78 /* phone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = phone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7F368A1ACEBDFA00F68C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE7F368B1ACEBDFA00F68C78 /* phone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phone.h; sourceTree = "<group>"; };
@@ -46,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1382FD1AE28F2800813BAF /* Pods.framework in Frameworks */,
 				CE7F36B51ACEC0DA00F68C78 /* core.framework in Frameworks */,
-				D507A96CB076D0597ED7BE44 /* Pods_phone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,15 +62,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		022D8F194ECB707DD2A6D08A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				179F78271487F6E128CC0A15 /* Pods-phone.debug.xcconfig */,
-				9BA3BDBDD27155B08B8D7A8A /* Pods-phone.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CE7F367C1ACEBDFA00F68C78 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +69,6 @@
 				CE7F36951ACEBDFA00F68C78 /* phoneTests */,
 				CE7F36BA1ACEC10B00F68C78 /* Frameworks */,
 				CE7F36871ACEBDFA00F68C78 /* Products */,
-				022D8F194ECB707DD2A6D08A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +95,8 @@
 		CE7F36891ACEBDFA00F68C78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE1382F21AE28E8600813BAF /* Pods.debug.xcconfig */,
+				CE1382F31AE28E8600813BAF /* Pods.release.xcconfig */,
 				CE7F368A1ACEBDFA00F68C78 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -130,8 +122,8 @@
 		CE7F36BA1ACEC10B00F68C78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE1382FC1AE28F2800813BAF /* Pods.framework */,
 				CE7F36B41ACEC0DA00F68C78 /* core.framework */,
-				22C33E1128F859CFD9892672 /* Pods_phone.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,13 +146,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE7F369C1ACEBDFA00F68C78 /* Build configuration list for PBXNativeTarget "phone" */;
 			buildPhases = (
-				2AD5CA38F062C68B0B3C5FCA /* Check Pods Manifest.lock */,
 				CE7F36811ACEBDFA00F68C78 /* Sources */,
 				CE7F36821ACEBDFA00F68C78 /* Frameworks */,
 				CE7F36831ACEBDFA00F68C78 /* Headers */,
 				CE7F36841ACEBDFA00F68C78 /* Resources */,
-				BED3E394004BC09A04A5AFEF /* Embed Pods Frameworks */,
-				6B68E0D0CFEF0D552AC51AF4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,54 +230,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2AD5CA38F062C68B0B3C5FCA /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6B68E0D0CFEF0D552AC51AF4 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-phone/Pods-phone-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BED3E394004BC09A04A5AFEF /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-phone/Pods-phone-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		CE7F36811ACEBDFA00F68C78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -353,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -393,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,7 +346,7 @@
 		};
 		CE7F369D1ACEBDFA00F68C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 179F78271487F6E128CC0A15 /* Pods-phone.debug.xcconfig */;
+			baseConfigurationReference = CE1382F21AE28E8600813BAF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -422,7 +363,7 @@
 		};
 		CE7F369E1ACEBDFA00F68C78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BA3BDBDD27155B08B8D7A8A /* Pods-phone.release.xcconfig */;
+			baseConfigurationReference = CE1382F31AE28E8600813BAF /* Pods.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

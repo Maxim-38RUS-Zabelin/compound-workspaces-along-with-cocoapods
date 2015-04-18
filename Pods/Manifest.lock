@@ -1,13 +1,39 @@
 PODS:
+  - AFNetworking (2.5.2):
+    - AFNetworking/NSURLConnection (= 2.5.2)
+    - AFNetworking/NSURLSession (= 2.5.2)
+    - AFNetworking/Reachability (= 2.5.2)
+    - AFNetworking/Security (= 2.5.2)
+    - AFNetworking/Serialization (= 2.5.2)
+    - AFNetworking/UIKit (= 2.5.2)
+  - AFNetworking/NSURLConnection (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.2)
+  - AFNetworking/Security (2.5.2)
+  - AFNetworking/Serialization (2.5.2)
+  - AFNetworking/UIKit (2.5.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - Alamofire (1.2.0)
   - CrashlyticsFramework (2.2.10)
+  - ViewUtils (1.1.2)
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.5)
   - Alamofire (~> 1.1)
   - CrashlyticsFramework (~> 2.2)
+  - ViewUtils (~> 1.1)
 
 SPEC CHECKSUMS:
+  AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
   Alamofire: d765c5c1713aa64106b0228aaa600a1e6851f68d
   CrashlyticsFramework: 2f7c515a2d74c8636bf47e761621f2f68193747e
+  ViewUtils: 68e42c708a4b3912e39691cef5080282dc5013fb
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.36.4

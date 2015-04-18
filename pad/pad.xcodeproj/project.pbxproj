@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F55357BCDFC50A7C9DF68AA /* Pods_pad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98381C968BD25D1D33B445F8 /* Pods_pad.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CE1382FB1AE28F0600813BAF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1382FA1AE28F0600813BAF /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CE7F36661ACEBDEC00F68C78 /* pad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7F36651ACEBDEC00F68C78 /* pad.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE7F366C1ACEBDEC00F68C78 /* pad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F36601ACEBDEC00F68C78 /* pad.framework */; };
 		CE7F36731ACEBDEC00F68C78 /* padTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F36721ACEBDEC00F68C78 /* padTests.swift */; };
@@ -27,9 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		34E16D778D2A59D95245F244 /* Pods-pad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pad.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-pad/Pods-pad.debug.xcconfig"; sourceTree = "<group>"; };
-		98381C968BD25D1D33B445F8 /* Pods_pad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B732BAE0A70440C08B601FAE /* Pods-pad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pad.release.xcconfig"; path = "../Pods/Target Support Files/Pods-pad/Pods-pad.release.xcconfig"; sourceTree = "<group>"; };
+		CE1382F41AE28E9400813BAF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "/Users/user/Documents/Projects/Github/demo/phone/phone/../../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<absolute>"; };
+		CE1382F51AE28E9400813BAF /* Pods.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "/Users/user/Documents/Projects/Github/demo/phone/phone/../../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<absolute>"; };
+		CE1382FA1AE28F0600813BAF /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "/Users/user/Documents/Projects/Github/demo/Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<absolute>"; };
 		CE7F36601ACEBDEC00F68C78 /* pad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7F36641ACEBDEC00F68C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE7F36651ACEBDEC00F68C78 /* pad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pad.h; sourceTree = "<group>"; };
@@ -46,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1382FB1AE28F0600813BAF /* Pods.framework in Frameworks */,
 				CE7F36B91ACEC0E300F68C78 /* core.framework in Frameworks */,
-				1F55357BCDFC50A7C9DF68AA /* Pods_pad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,15 +62,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30D7A93CA4E352EE87FE6894 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				34E16D778D2A59D95245F244 /* Pods-pad.debug.xcconfig */,
-				B732BAE0A70440C08B601FAE /* Pods-pad.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CE7F36561ACEBDEC00F68C78 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +69,6 @@
 				CE7F366F1ACEBDEC00F68C78 /* padTests */,
 				CE7F36BB1ACEC12400F68C78 /* Frameworks */,
 				CE7F36611ACEBDEC00F68C78 /* Products */,
-				30D7A93CA4E352EE87FE6894 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +95,8 @@
 		CE7F36631ACEBDEC00F68C78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE1382F41AE28E9400813BAF /* Pods.debug.xcconfig */,
+				CE1382F51AE28E9400813BAF /* Pods.release.xcconfig */,
 				CE7F36641ACEBDEC00F68C78 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -130,8 +122,8 @@
 		CE7F36BB1ACEC12400F68C78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE1382FA1AE28F0600813BAF /* Pods.framework */,
 				CE7F36B81ACEC0E300F68C78 /* core.framework */,
-				98381C968BD25D1D33B445F8 /* Pods_pad.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,13 +146,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE7F36761ACEBDEC00F68C78 /* Build configuration list for PBXNativeTarget "pad" */;
 			buildPhases = (
-				6F575BB904AA7475387B2FA8 /* Check Pods Manifest.lock */,
 				CE7F365B1ACEBDEC00F68C78 /* Sources */,
 				CE7F365C1ACEBDEC00F68C78 /* Frameworks */,
 				CE7F365D1ACEBDEC00F68C78 /* Headers */,
 				CE7F365E1ACEBDEC00F68C78 /* Resources */,
-				794A8AE634266E8ECF132E22 /* Embed Pods Frameworks */,
-				9C6D884BB4D0FD21844EB7CE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,54 +230,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		6F575BB904AA7475387B2FA8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		794A8AE634266E8ECF132E22 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-pad/Pods-pad-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C6D884BB4D0FD21844EB7CE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-pad/Pods-pad-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		CE7F365B1ACEBDEC00F68C78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -353,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -393,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,7 +346,7 @@
 		};
 		CE7F36771ACEBDEC00F68C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34E16D778D2A59D95245F244 /* Pods-pad.debug.xcconfig */;
+			baseConfigurationReference = CE1382F41AE28E9400813BAF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -422,7 +363,7 @@
 		};
 		CE7F36781ACEBDEC00F68C78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B732BAE0A70440C08B601FAE /* Pods-pad.release.xcconfig */;
+			baseConfigurationReference = CE1382F51AE28E9400813BAF /* Pods.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
